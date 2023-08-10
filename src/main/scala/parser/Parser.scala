@@ -21,17 +21,6 @@ import scala.io.Source
 import java.nio.file.{Files, Paths}
 
 class Parser(path: String) {
-  //todo  прочитать что такое итератор
-  def readFile(): Iterator[String] = {
-    Source.fromFile(path).getLines
-  }
-
-  /**
-   * метод для тестов
-   */
-  def print(iterator: Iterator[String]): Unit = {
-    iterator.foreach(println)
-  }
 
   def parse() = {
     val json = Files.readString(Paths.get(path))
