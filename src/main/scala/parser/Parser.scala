@@ -27,7 +27,7 @@ class Parser(path: String) {
   }
 
   /**
-   * метод для тестов
+   * метод для  тестов
    */
   def print(iterator: Iterator[String]): Unit = {
     iterator.foreach(println)
