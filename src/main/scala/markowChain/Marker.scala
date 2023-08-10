@@ -1,0 +1,5 @@
+package markowChain
+
+object Marker {
+
+}

@@ -23,7 +23,7 @@ object Message {
   implicit val telegramDecoder: Decoder[TelegramExport] = (c: HCursor) =>
     for {
       from <- c.downField("messages").as[Set[Message]]
-    } yield TelegramExport(from)
+    } yield TelegramExport(from.filterNot(_.text.contains("\"text\" :")))
 
   def decodeTelegram(input: String): Either[circe.Error, TelegramExport] = io.circe.parser.decode[TelegramExport](input)
 }
