@@ -1,3 +1,12 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/modules/
+/misc.xml
+/modules.xml
+/codeStyles/Project.xml
+/sbt.xml
+/libraries/
+/scala_compiler.xml
+/uiDesigner.xml
+/vcs.xml
